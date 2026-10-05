@@ -1,0 +1,9 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Claude 앱 열기</title></head>
+<body style="font-family:-apple-system,sans-serif;text-align:center;padding:48px 16px">
+<p id="m">Claude 앱을 여는 중이에요...</p>
+<p><a id="a" style="display:inline-block;padding:14px 24px;background:#d97757;color:#fff;border-radius:10px;text-decoration:none" href="#">Claude 앱에서 열기</a></p>
+<script>
+var id=(location.hash||"").replace(/^#/,"");
+if(/^session_[A-Za-z0-9_-]+$/.test(id)){var u="claude://code/"+id;document.getElementById("a").href=u;location.href=u;}
+else{document.getElementById("m").textContent="세션 번호가 없는 링크예요.";document.getElementById("a").style.display="none";}
+</script></body></html>
